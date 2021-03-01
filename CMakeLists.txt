@@ -1,8 +1,5 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.19.6 FATAL_ERROR)
 
-project(cat LANGUAGES CXX)
+project(cat)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-add_executable(cat main.cpp)
+add_executable(cat src/main.cpp)
